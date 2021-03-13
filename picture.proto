@@ -1,0 +1,17 @@
+syntax="proto3";
+
+service PictureManagemet {
+  rpc ListPictures (PicturesRequest) returns (PicturesResponce);
+}
+
+message Picture {
+  string picture_name = 1;
+}
+
+message PicturesRequest {
+
+}
+
+message PicturesResponce {
+    repeated Picture picture = 1;
+}
